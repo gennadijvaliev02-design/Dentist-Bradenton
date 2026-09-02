@@ -211,7 +211,7 @@ section{padding:6rem 0;position:relative}
 .ba-tag.before{left:18px}.ba-tag.after{right:18px}
 .ba-hint{text-align:center;color:var(--muted);font-size:.85rem;margin-top:1rem;letter-spacing:.12em;text-transform:uppercase}
 
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:3.4rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3.4rem}
 .g-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--card);transition:.35s}
 .g-card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.45)}
 .gc-split{display:grid;grid-template-columns:1fr 1fr;position:relative;aspect-ratio:16/10}
@@ -223,8 +223,7 @@ section{padding:6rem 0;position:relative}
 .gc-info{padding:1.3rem 1.4rem}
 .gc-info h4{font-family:var(--font-head);color:#fff;font-size:1.02rem}
 .gc-info p{color:var(--muted);font-size:.88rem}
-@media(max-width:1100px){.gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.gallery{grid-template-columns:1fr}}
+@media(max-width:960px){.gallery{grid-template-columns:1fr}}
 
 /* ============ ABOUT ============ */
 .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:4.5rem;align-items:center}
@@ -559,13 +558,6 @@ footer{background:#030509;border-top:1px solid var(--line);padding:4.5rem 0 0}
           <div class="gc-after"><svg><use href="#smile-after"/></svg><img src="assets/gallery/3-after.jpg" alt="" onerror="this.remove()"><span>After</span></div>
         </div>
         <div class="gc-info"><h4>Veneer Transformation</h4><p>Color &amp; shape correction · 10 units</p></div>
-      </div>
-      <div class="g-card reveal" style="--d:.36s">
-        <div class="gc-split">
-          <div class="gc-before"><svg><use href="#smile-before"/></svg><img src="assets/gallery/4-before.jpg" alt="Before cosmetic dentistry treatment" onerror="this.remove()"><span>Before</span></div>
-          <div class="gc-after"><svg><use href="#smile-after"/></svg><img src="assets/gallery/4-after.jpg" alt="After cosmetic dentistry treatment" onerror="this.remove()"><span>After</span></div>
-        </div>
-        <div class="gc-info"><h4>Cosmetic Smile Enhancement</h4><p>Natural-looking restorations · personalized care</p></div>
       </div>
     </div>
   </div>
