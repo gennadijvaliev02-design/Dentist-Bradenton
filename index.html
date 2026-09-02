@@ -211,7 +211,7 @@ section{padding:6rem 0;position:relative}
 .ba-tag.before{left:18px}.ba-tag.after{right:18px}
 .ba-hint{text-align:center;color:var(--muted);font-size:.85rem;margin-top:1rem;letter-spacing:.12em;text-transform:uppercase}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3.4rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:3.4rem}
 .g-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--card);transition:.35s}
 .g-card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.45)}
 .gc-split{display:grid;grid-template-columns:1fr 1fr;position:relative;aspect-ratio:16/10}
@@ -224,6 +224,12 @@ section{padding:6rem 0;position:relative}
 .gc-info h4{font-family:var(--font-head);color:#fff;font-size:1.02rem}
 .gc-info p{color:var(--muted);font-size:.88rem}
 @media(max-width:960px){.gallery{grid-template-columns:1fr}}
+.veneer-feature{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;margin-top:2rem;overflow:hidden;border:1px solid rgba(212,175,55,.42);border-radius:var(--radius);background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:var(--shadow)}
+.veneer-feature img{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center}
+.veneer-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4.5rem)}
+.veneer-copy h3{font-size:clamp(1.8rem,3vw,2.8rem);margin:.7rem 0 1rem}
+.veneer-copy p{max-width:38rem;color:var(--muted);font-size:1.06rem}
+@media(max-width:760px){.veneer-feature{grid-template-columns:1fr}.veneer-feature img{min-height:290px;max-height:390px}.veneer-copy{padding:2rem 1.5rem}}
 
 /* ============ ABOUT ============ */
 .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:4.5rem;align-items:center}
@@ -552,14 +558,16 @@ footer{background:#030509;border-top:1px solid var(--line);padding:4.5rem 0 0}
         </div>
         <div class="gc-info"><h4>Full Mouth Reconstruction</h4><p>Implants &amp; crowns · full arch</p></div>
       </div>
-      <div class="g-card reveal" style="--d:.24s">
-        <div class="gc-split">
-          <div class="gc-before"><svg><use href="#smile-before"/></svg><img src="assets/gallery/3-before.jpg?v=20260902" alt="" onerror="this.remove()"><span>Before</span></div>
-          <div class="gc-after"><svg><use href="#smile-after"/></svg><img src="assets/gallery/3-after.jpg?v=20260902" alt="" onerror="this.remove()"><span>After</span></div>
-        </div>
-        <div class="gc-info"><h4>Bespoke Porcelain Veneers</h4><p>Refined, natural-looking veneers for a luminous, Hollywood-worthy smile.</p></div>
-      </div>
     </div>
+    <article class="veneer-feature reveal" style="--d:.2s">
+      <img src="assets/veneer-showcase.jpg?v=20260903" alt="Bespoke porcelain veneers by Dr. Romero">
+      <div class="veneer-copy">
+        <span class="eyebrow">Signature Aesthetic Dentistry</span>
+        <h3>Bespoke Porcelain Veneers</h3>
+        <p>Refined, natural-looking veneers designed to give your smile the luminous confidence of a Hollywood star — while still looking unmistakably like you.</p>
+        <a href="#contact" class="btn btn-gold">Book Your Veneer Consultation</a>
+      </div>
+    </article>
   </div>
 </section>
 
